@@ -47,6 +47,69 @@ body{
 }
 
 input {
-    font-family: "Potta One", cursive;
+    font-family: "Atma", cursive;
+    border: 2px solid var(--bg-main);
+    color: var(--color-txt);
     
+}
+
+input:hover,
+input:focus{
+    border-color:var(--blue);
+
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+ul{
+    list-style-type:none;
+}
+
+nav{
+    background-color: var(--bg-body);
+    color: var(--color-txt);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow : 5px 2px var(--bg-main);
+    z-index: 99;
+}
+
+.nav-container{
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    height: var(--nav-size);
+    padding: 0 40px;
+}
+.nav-logo{
+    font-size:var(--font-size-lg);
+    color: var(--blue);
+}
+
+.dark-mode-toggle{
+    color: var(--blue);
+    font-size: var(--font-size-lg);
+    cursor: pointer;
+}
+
+.bxs-sun {
+    display: none;
+}
+
+.bxs-moon {
+    display: inline-block;
+}
+
+.dark .bxs-sun{
+    display: inline-block;
+}
+
+.dark .bxs-moon{
+    display: none;
 }
